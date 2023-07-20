@@ -1,0 +1,28 @@
+<div class="search-container">
+    <input type="text" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="onSearchTextChange()" />
+</div>
+
+<div class="songs-container">
+<h2>Song List</h2>
+
+  <table class="list-table">
+    <thead>
+      <tr>
+        <th>Song Title</th>
+        <th>Genre</th>
+        <th>Artist</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let song of songList">
+        <td>{{ song.song_title }}</td>
+        <td>{{ song.genre }}</td>
+        <td>{{ song.artist }}</td>
+        <td>
+          <button class="play-button" (click)="playSong(song, songList)">Play</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

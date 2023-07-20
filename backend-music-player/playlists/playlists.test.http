@@ -1,0 +1,42 @@
+POST http://localhost:3000/playlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+Content-Type: application/json
+
+{
+    "name": "Myanmar Playlist"
+}
+
+###
+GET  http://localhost:3000/playlists
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+
+###
+GET  http://localhost:3000/playlists/64b2fc0208108ff23136750d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+
+###
+POST http://localhost:3000/playlists/64b2fc0208108ff23136750d
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+Content-Type: application/json
+
+{
+      "_id": "64b59c85659b7dc56589f175",
+      "song_title": "I don't want to mniss a thing",
+      "song_url": "http://localhost:3000/music/i_dont_want_to_miss_a_thing.mp3",
+      "genre": [
+        "Rock"
+      ],
+      "artist": [
+        "Aerosmith"
+      ]
+    }
+
+###
+DELETE http://localhost:3000/playlists/64b2fc0208108ff23136750d/songs/64b2ba4b0e433003bb9ccc29
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+Content-Type: application/json
+
+###
+DELETE http://localhost:3000/playlists/64b2fc3a08108ff23136750f
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2NGIxOGNhOWJiZGVhMWJkY2FhNDZiYzAiLCJmdWxsbmFtZSI6IlRpbiBUdW4gQXVuZyIsImVtYWlsIjoidGludHVuLmF1bmdAbWl1LmVkdSIsImlhdCI6MTY4OTQ1MTQ2OX0.ViB3iV1QXX8y589Wz4kfZ3R_X0em_k37rH-KCPg8MD0
+Content-Type: application/json

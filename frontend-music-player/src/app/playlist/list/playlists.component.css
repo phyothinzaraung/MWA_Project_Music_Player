@@ -1,0 +1,208 @@
+.main-content {
+  padding-left: 150px;
+  padding-top: 60px;
+  overflow: auto;
+  margin-bottom: 100px;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+h2, h3 {
+  margin: 0;
+  margin-left: 20px;
+}
+
+.special-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffcccc;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin-left: 29px;
+  margin-top: 20px;
+  margin-right: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.special-button:hover {
+  background-color: #ff9999;
+  transform: scale(1.05);
+}
+
+.special-button img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.special-button span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.dialog {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dialog h2 {
+  padding: 20px;
+  text-align: center;
+}
+
+.dialog-content input[type="text"] {
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+  outline: none;
+  margin: 10px;
+}
+
+.dialog-content input[type="text"]:focus {
+  border-color: #ff9999;
+}
+
+.dialog-actions {
+  display: flex;
+  justify-content: center; 
+  margin-top: 10px;
+  width: 80%; 
+}
+
+.cancel-button {
+  margin-right: 5px; 
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.confirm-button {
+  background-color: #ffcccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.confirm-button:hover {
+  background-color: #ff9999;
+}
+
+.card-container {
+  display: flex; 
+  overflow-x: auto;
+  padding: 20px;
+  gap: 20px;
+  overflow-y: hidden;
+  flex-wrap: nowrap;
+}
+
+.card {
+  flex: 0 0 280px; 
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin-right: 10px; 
+}
+
+.card-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.card:nth-child(1n) {
+  background-color: #ffcccc;
+}
+
+.card:nth-child(2n) {
+  background-color: #ccccff;
+}
+
+.card:nth-child(3n) {
+  background-color: #88d6f5;
+}
+
+.card:nth-child(4n) {
+  background-color: #ccffcc;
+}
+
+.card:nth-child(5n) {
+  background-color: #dff884;
+}
+
+.card:nth-child(6n) {
+  background-color: #f884f2;
+}
+
+.card:nth-child(7n) {
+  background-color: #f88490;
+}
+
+.card:nth-child(8n) {
+  background-color: #f8d984;
+}
+
+.card:nth-child(9n) {
+  background-color: #c69cf0;
+}
+
+.card h3 {
+  margin: 10px 0;
+}
+
+.card p {
+  color: #777;
+}
+
+.image-button {
+  border: none;
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+}
+
+.image-button img {
+  display: block;
+  width: 100%;
+  height: auto;
+}

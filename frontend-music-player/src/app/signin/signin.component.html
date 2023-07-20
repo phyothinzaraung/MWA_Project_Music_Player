@@ -1,0 +1,19 @@
+<div class="login-container">
+    <h2>Login</h2>
+    <form [formGroup]="login_form" (ngSubmit)="login()">
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input placeholder="email" type="email" formControlName="email" />
+        </div>
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input placeholder="password" type="password" formControlName="password" />
+        </div>
+        <button type="submit" [class.enabled] = "!login_form.invalid" [disabled]="login_form.invalid">Sign In</button>
+    </form>
+    <div class="signup-link">
+        <p>Do not have an account? <a routerLink="/signup">create an account</a></p>
+    </div>
+
+    <p class="errorMessage" *ngIf="isLoginSuccess == false">Invalid Credentials</p>
+</div>

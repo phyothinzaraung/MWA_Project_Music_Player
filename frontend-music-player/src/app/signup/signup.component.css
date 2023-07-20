@@ -1,0 +1,89 @@
+h2 {
+  text-align: center;
+}
+
+.signup-container {
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: white;
+  color: black;
+  box-sizing: border-box;
+  border: 1px solid black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+button.enabled {
+  display: block;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+  /* transition: background-color 0.3s; */
+}
+
+button.enabled:hover {
+  background-color: #45a049;
+}
+
+button:enabled.enabled {
+  /* Add more specificity to the selector */
+  display: block;
+  background-color: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+button.disabled {
+  display: block;
+  background-color: gray;
+  color: lightgray;
+  border: none;
+  cursor: not-allowed;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.signup-link a {
+  color: blue;
+  text-decoration: underline;
+}
+
+.signup-link a:hover {
+  color: darkblue;
+}

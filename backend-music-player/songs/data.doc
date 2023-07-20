@@ -1,0 +1,153 @@
+{
+    "song_title": "Bad Romance",
+    "song_url": "http://localhost:3000/music/bad_romance.mp3",
+    "genre": ["Pop"],
+    "artist": ["Lady Gaga"]
+}
+
+{
+    "song_title": "Always",
+    "song_url": "http://localhost:3000/music/always.mp3",
+    "genre": ["Pop"],
+    "artist": ["Isak Danielson"]
+}
+
+{
+    "song_title": "Afterglow",
+    "song_url": "http://localhost:3000/music/aferglow.mp3",
+    "genre": ["Pop"],
+    "artist": ["Ed Sheeran"]
+}
+
+{
+    "song_title": "Sweet But Psycho",
+    "song_url": "http://localhost:3000/music/sweet_but_psycho.mp3",
+    "genre": ["Pop"],
+    "artist": ["Ava Max"]
+}
+
+{
+    "song_title": "Wolves",
+    "song_url": "http://localhost:3000/music/wolves.mp3",
+    "genre": ["Pop"],
+    "artist": ["Selena Gomez"]
+}
+
+{
+    "song_title": "In The End",
+    "song_url": "http://localhost:3000/music/in_the_end.mp3",
+    "genre": ["Rock"],
+    "artist": ["Linkin Park"]
+}
+
+{
+    "song_title": "Demons",
+    "song_url": "http://localhost:3000/music/demons.mp3",
+    "genre": ["Rock"],
+    "artist": ["Imagine Dragons"]
+}
+
+{
+    "song_title": "Dear God",
+    "song_url": "http://localhost:3000/music/dear_god.mp3",
+    "genre": ["Rock"],
+    "artist": ["Avenged Sevenfold"]
+}
+
+{
+    "song_title": "Speechless",
+    "song_url": "http://localhost:3000/music/speechless.mp3",
+    "genre": ["Rock"],
+    "artist": ["Naomi Scott"]
+}
+
+{
+    "song_title": "I don't want to mniss a thing",
+    "song_url": "http://localhost:3000/music/i_dont_want_to_miss_a_thing.mp3",
+    "genre": ["Rock"],
+    "artist": ["Aerosmith"]
+}
+
+{
+    "song_title": "Darkside",
+    "song_url": "http://localhost:3000/music/darkside.mp3",
+    "genre": ["EDM"],
+    "artist": ["Alan Walker"]
+}
+
+{
+    "song_title": "Lost Control",
+    "song_url": "http://localhost:3000/music/lost_control.mp3",
+    "genre": ["EDM"],
+    "artist": ["Alan Walker"]
+}
+
+{
+    "song_title": "Ignite",
+    "song_url": "http://localhost:3000/music/ignite.mp3",
+    "genre": ["EDM"],
+    "artist": ["Alan Walker"]
+}
+
+{
+    "song_title": "All Falls Down",
+    "song_url": "http://localhost:3000/music/all_falls_down.mp3",
+    "genre": ["EDM"],
+    "artist": ["Alan Walker"]
+}
+
+{
+    "song_title": "Alone",
+    "song_url": "http://localhost:3000/music/alone.mp3",
+    "genre": ["EDM"],
+    "artist": ["Alan Walker"]
+}
+
+{
+    "song_title": "Best Friend",
+    "song_url": "http://localhost:3000/music/best_friend.mp3",
+    "genre": ["Hip Hop", "International"],
+    "artist": ["Thant Zaw", "Ye Phyo", "Ba Chaw", "Nyi Nyi Thwin"]
+}
+
+{
+    "song_title": "One upon a time",
+    "song_url": "http://localhost:3000/music/one_upon_a_time.mp3",
+    "genre": ["Hip Hop", "International"],
+    "artist": ["Yatha", "Jenny"]
+}
+
+{
+    "song_title": "Without You",
+    "song_url": "http://localhost:3000/music/without_you.mp3",
+    "genre": ["Hip Hop", "International"],
+    "artist": ["OSN"]
+}
+
+{
+    "song_title": "STAR",
+    "song_url": "http://localhost:3000/music/STAR.mp3",
+    "genre": ["Hip Hop", "International"],
+    "artist": ["Jessi"]
+}
+
+{
+    "song_title": "Reset",
+    "song_url": "http://localhost:3000/music/reset.mp3",
+    "genre": ["Hip Hop", "International"],
+    "artist": ["Tiger JK"]
+}
+
+{
+    "song_title": "Vampire",
+    "song_url": "http://localhost:3000/music/vampire.mp3",
+    "genre": ["Gothic"],
+    "artist": ["Olivia Rodrigo"]
+}
+
+{
+    "song_title": "Driver License",
+    "song_url": "http://localhost:3000/music/driver_license.mp3",
+    "genre": ["Gothic"],
+    "artist": ["Olivia Rodrigo"]
+}

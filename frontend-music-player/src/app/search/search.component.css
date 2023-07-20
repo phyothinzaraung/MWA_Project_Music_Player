@@ -1,0 +1,57 @@
+.search-container {
+  margin-bottom: 20px;
+  padding-left: 150px;
+  padding-top: 100px;
+  padding-right: 40px;
+  overflow: auto;
+}
+
+.search-container input {
+  width: 50%;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.songs-container{
+  padding-left: 150px;
+}
+
+.list-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 100px;
+}
+
+.list-table th,
+.list-table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.list-table thead {
+  background-color: #f2f2f2;
+}
+
+.list-table tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.list-table td:last-child {
+  text-align: center;
+}
+
+.play-button {
+  background-color: #ffcccc;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.play-button:hover {
+  background-color: #ff9999;
+  transform: scale(1.05);
+}

@@ -1,0 +1,12 @@
+<header>
+  <div class="login-form">
+    <div class="left-text"><p>Welcome {{auth.state_signal().fullname || " to MWA Music Player!"}}</p> </div>
+    <div class="right-buttons">
+    <form> 
+      <button class="borderless-button" type="submit" (click)="signUp()" *ngIf="!auth.state_signal()._id">Sign Up</button>
+      <button type="submit" (click)="signIn()" *ngIf="!auth.state_signal()._id">Sign In</button>
+      <button type="submit" (click)="signOut()" *ngIf="auth.state_signal()._id">Sign Out</button>
+    </form>
+    </div>
+  </div>
+</header>

@@ -1,0 +1,39 @@
+POST http://localhost:3000/songs
+Content-Type: application/json
+
+{
+    "song_title": "Driver License",
+    "song_url": "http://localhost:3000/music/driver_license.mp3",
+    "genre": ["Gothic"],
+    "artist": ["Olivia Rodrigo"]
+}
+
+###
+GET  http://localhost:3000/songs
+
+###
+GET  http://localhost:3000/songs/genres
+
+###
+GET  http://localhost:3000/songs/artists
+
+###
+GET  http://localhost:3000/songs/genres/pop
+
+###
+GET  http://localhost:3000/songs/artists/lady gaga
+
+###
+PUT http://localhost:3000/songs/64b1ad48f1ec760a1cc42103
+Content-Type: application/json
+
+{
+    "song_title": "In the end",
+    "song_url": "http://localhost:3000/music/in_the_end.mp3",
+    "genre": ["Rock"],
+    "artist": ["Linkin Park"]
+}
+
+###
+DELETE  http://localhost:3000/songs/64b1ad48f1ec760a1cc42103
+Content-Type: application/json

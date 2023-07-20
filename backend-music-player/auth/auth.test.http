@@ -1,0 +1,27 @@
+POST http://localhost:3000/auth/signup
+Content-Type: application/json
+
+{
+    "name": "Tin Tun Aung",
+    "email": "tintun.aung@miu.edu",
+    "password": "123456"
+}
+
+###
+POST http://localhost:3000/auth/signin
+Content-Type: application/json
+
+{
+    "email": "tintun.aung@miu.edu",
+    "password": "123456"
+}
+
+###
+PUT http://localhost:3000/auth/password
+Content-Type: application/json
+
+{
+    "email": "tintun.aung@miu.edu",
+    "old_password": "123456",
+    "new_password": "123456789"
+}

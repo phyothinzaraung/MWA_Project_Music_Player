@@ -1,0 +1,35 @@
+<footer class="audioFooter" *ngIf="auth.state_signal()._id && song">
+  <div class="controlButtons">
+    <button id="featureButton" (click)="toggleShuffle()">
+      <img [src]="!isShuffle ? '.../../assets/shuffle_off.png' : '../../assets/shuffle_on.png'">
+    </button>
+    <button id="preButton" (click)="prev()">
+      <img src="../../assets/prev.png">
+    </button>
+    <button id="playPauseButton" (click)="togglePlayPause()" [disabled]="songList.length==0" >
+      <img [src]="isPlaying ? '../../assets/pause.png' : '../../assets/play.png'">
+    </button>
+    <button id="nextButton" (click)="next()">
+      <img src="../../assets//next.png">
+    </button>
+    <button id="featureButton" (click)="toggleRepeat()">
+      <img [src]="!isRepeatOnce ? '../../assets/repeat.png' : '../../assets/repeat-once-on.png'">
+    </button>
+  </div>
+
+  <div></div>
+  <div class="remaining-content">
+    <div>
+      <audio #audioPlayer id="audioPlayer" control></audio>
+      <div>
+        <p id="musicTitle">{{song_title || "No Title"}}</p>
+      </div>
+
+      <div><input type="range" id="seekBar" [value]="seekBarValue || 0" min="0" max="100" step="0.01" (input)="onSeekBarChange($event)"></div>
+      <div class="bar-title">
+        <span id="currentTime">{{ currentTime || "0:00"}}</span>
+        <span id="duration">{{ duration || "0:00" }}</span>
+      </div>
+    </div>
+  </div>
+</footer>

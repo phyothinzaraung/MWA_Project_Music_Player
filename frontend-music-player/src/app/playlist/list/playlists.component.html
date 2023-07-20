@@ -1,0 +1,51 @@
+<div class="main-content">
+  <div class="row">
+    <h2>My Playlists</h2>
+    <button class="special-button" (click)="openCreatePlaylistModal()">
+      <img src="../assets/add-to-playlist.png" alt="Button Image">
+      <span>Create New Playlist</span>
+    </button>
+  </div>
+
+  <h3 *ngIf="playlists.length === 0">No Playlists...</h3>
+
+  <div class="dialog" *ngIf="showCreatePlaylistDialog">
+    <div class="dialog-content">
+      <h2>Create Playlist</h2>
+      <input type="text" [(ngModel)]="newPlaylistName" placeholder="Enter playlist name">
+      <div class="dialog-actions">
+        <button class="cancel-button" (click)="cancelCreatePlaylist()">Cancel</button>
+        <button class="confirm-button" (click)="confirmCreatePlaylist()">Create</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" *ngFor="let playlist of playlists" (click)="getDetailsPlaylist(playlist)">
+      <div class="row">
+        <h3>{{ playlist.name }}</h3>
+        <button class="image-button" (click)="delete_playlist($event, playlist._id)">
+          <img src="../../../assets/delete.png">
+        </button>
+      </div>
+      <p>Enjoy your music...</p>
+    </div>
+  </div>
+  
+
+  <h2>Genres</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let genre of genreList" (click) = "getSongsByGenre(genre)">
+      <h3>{{ genre }}</h3>
+      <p>Enjoy your music...</p>
+    </div>
+  </div>
+
+  <h2>Artists</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let artist of artistList" (click) = "getSongsByArtist(artist)">
+      <h3>{{ artist }}</h3>
+      <p>Enjoy your music...</p>
+    </div>
+  </div>
+</div>

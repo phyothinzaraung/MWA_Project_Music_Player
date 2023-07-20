@@ -1,0 +1,50 @@
+<div class="main-content">
+  <h2>{{playlist_name}}</h2>
+  <h3 *ngIf="songList.length === 0">No Songs...</h3>
+  <table class="list-table">
+    <thead *ngIf="songList.length !== 0">
+      <tr>
+        <th>Song Title</th>
+        <th>Genre</th>
+        <th>Artist</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let song of songList">
+        <td>{{ song.song_title }}</td>
+        <td>{{ song.genre }}</td>
+        <td>{{ song.artist }}</td>
+        <td>
+          <button class="play-button" (click)="playSong(song, songList)">Play</button>
+          <button class="remove-from-playlist-button" (click)="removeFromPlaylist(song._id)">Remove from Playlist</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h2>Let's find something for your playlist</h2>
+  <div class="search-container">
+    <input type="text" placeholder="Search" [(ngModel)]="searchText" (ngModelChange)="onSearchTextChange()" />
+</div>
+  <table class="list-table">
+    <thead>
+      <tr>
+        <th>Song Title</th>
+        <th>Genre</th>
+        <th>Artist</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let song of allSongList">
+        <td>{{ song.song_title }}</td>
+        <td>{{ song.genre }}</td>
+        <td>{{ song.artist }}</td>
+        <td>
+          <button class="add-to-playlist-button" (click)="addToPlaylist(song)">Add to Playlist</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

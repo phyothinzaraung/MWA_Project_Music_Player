@@ -1,0 +1,40 @@
+<div class="main-content">
+  <h2>Genres</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let genre of genreList" (click) = "getSongsByGenre(genre)">
+      <h3>{{ genre }}</h3>
+      <p>Enjoy your music...</p>
+    </div>
+  </div>
+
+  <h2>Artists</h2>
+  <div class="card-container">
+    <div class="card" *ngFor="let artist of artistList" (click) = "getSongsByArtist(artist)">
+      <h3>{{ artist }}</h3>
+      <p>Enjoy your music...</p>
+    </div>
+  </div>
+
+  <h2>Songs</h2>
+  <table class="list-table">
+    <thead>
+      <tr>
+        <th>Song Title</th>
+        <th>Genre</th>
+        <th>Artist</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let song of songList">
+        <td>{{ song.song_title }}</td>
+        <td>{{ song.genre }}</td>
+        <td>{{ song.artist }}</td>
+        <td>
+          <button class="play-button" (click)="playSong(song, songList)">Play</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  
+</div>

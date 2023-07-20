@@ -1,0 +1,109 @@
+.main-content {
+    padding-left: 150px;
+    padding-top: 80px;
+    padding-bottom: 20px;
+    overflow: auto; 
+  }
+  
+  .card-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  
+  .card {
+    flex: 0 0 auto;
+    width: 168px;
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .card-container::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+  }
+  
+  .card-container::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+  
+  .card:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card:nth-child(1n) {
+    background-color: #ffcccc; 
+  }
+  
+  .card:nth-child(2n) {
+    background-color: #ccccff;
+  }
+  
+  .card:nth-child(3n) {
+    background-color: #88e4f5;
+  }
+
+  .card:nth-child(4n) {
+    background-color: #ccffcc;
+  }
+
+  .card:nth-child(5n) {
+    background-color: #dff884;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  .card p {
+    color: #777;
+  }
+  
+
+  .list-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 100px;
+  }
+  
+  .list-table th,
+  .list-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .list-table thead {
+    background-color: #f2f2f2;
+  }
+  
+  .list-table tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .list-table td:last-child {
+    text-align: center;
+  }
+  
+  .play-button {
+    background-color: #ffcccc;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .play-button:hover {
+    background-color: #ff9999;
+    transform: scale(1.05);
+  }
+  
+  
